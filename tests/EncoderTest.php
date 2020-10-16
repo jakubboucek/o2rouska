@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AppTest;
+namespace JakubBoucek\O2RouskaTest;
 
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -11,7 +11,7 @@ require __DIR__ . '/../vendor/autoload.php';
 /**
  * @testCase
  */
-class o2RouskaEncoderTest extends \Tester\TestCase
+class EncoderTest extends \Tester\TestCase
 {
 
     public function dataProvider(): array
@@ -34,7 +34,7 @@ class o2RouskaEncoderTest extends \Tester\TestCase
      */
     public function testEncoder(int $decoded, string $encoded): void
     {
-        \Tester\Assert::equal($encoded, \App\o2RouskaEncoder::encode($decoded));
+        \Tester\Assert::equal($encoded, \JakubBoucek\O2Rouska\Encoder::encode($decoded));
     }
 
     /**
@@ -42,7 +42,7 @@ class o2RouskaEncoderTest extends \Tester\TestCase
      */
     public function testDecoder(int $decoded, string $encoded): void
     {
-        \Tester\Assert::equal($decoded, \App\o2RouskaEncoder::decode($encoded));
+        \Tester\Assert::equal($decoded, \JakubBoucek\O2Rouska\Encoder::decode($encoded));
     }
 
     /**
@@ -50,8 +50,8 @@ class o2RouskaEncoderTest extends \Tester\TestCase
      */
     public function testDecoderExtended(int $decoded, string $encoded): void
     {
-        \Tester\Assert::equal($decoded, \App\o2RouskaEncoder::decode($encoded));
+        \Tester\Assert::equal($decoded, \JakubBoucek\O2Rouska\Encoder::decode($encoded));
     }
 }
 
-(new o2RouskaEncoderTest())->run();
+(new EncoderTest())->run();

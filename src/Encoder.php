@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App;
+namespace JakubBoucek\O2Rouska;
 
-class o2RouskaEncoder
+class Encoder
 {
     private const LETTERS = "abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private const LENGTH = 5;

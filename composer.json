@@ -1,6 +1,7 @@
 {
     "name": "jakubboucek/o2rouska",
-    "type": "project",
+    "description": "Dekódování telefonního čísla z odkazu O2 na stažení aplikace eRouška",
+    "type": "library",
     "authors": [
         {
             "name": "Jakub Bouček",
@@ -14,12 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "JakubBoucek\\O2Rouska\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AppTest\\": "tests/"
+            "JakubBoucek\\O2RouskaTest\\": "tests/"
         }
     }
 }
