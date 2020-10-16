@@ -1,0 +1,25 @@
+{
+    "name": "jakubboucek/o2rouska",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Jakub Bouček",
+            "email": "pan@jakubboucek.cz"
+        }
+    ],
+    "license": "MIT",
+    "require": {},
+    "require-dev": {
+        "nette/tester": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AppTest\\": "tests/"
+        }
+    }
+}
